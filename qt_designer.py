@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\qt_designer.ui'
+# Form implementation generated from reading ui file 'qt_designer.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(500, 500)
+        MainWindow.resize(1000, 500)
         MainWindow.setMinimumSize(QtCore.QSize(500, 500))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -34,9 +34,27 @@ class Ui_MainWindow(object):
         self.MplWidget = MplWidget(self.centralwidget)
         self.MplWidget.setGeometry(QtCore.QRect(10, 110, 480, 320))
         self.MplWidget.setObjectName("MplWidget")
+        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(650, 10, 160, 80))
+        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem2)
+        self.pushButton_open_file = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
+        self.pushButton_open_file.setMinimumSize(QtCore.QSize(120, 60))
+        self.pushButton_open_file.setObjectName("pushButton_open_file")
+        self.horizontalLayout_2.addWidget(self.pushButton_open_file)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem3)
+        self.cv2label = QtWidgets.QLabel(self.centralwidget)
+        self.cv2label.setGeometry(QtCore.QRect(500, 110, 480, 320))
+        self.cv2label.setText("")
+        self.cv2label.setObjectName("cv2label")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 500, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1000, 31))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -52,6 +70,8 @@ class Ui_MainWindow(object):
         self.pushButton_generate_random_signal.setText(_translate("MainWindow", "Generate\n"
 "Random\n"
 "Signal"))
+        self.pushButton_open_file.setText(_translate("MainWindow", "Open\n"
+"File"))
 from mplwidget import MplWidget
 
 
