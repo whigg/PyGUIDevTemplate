@@ -16,3 +16,5 @@ pyinstaller test.py --onefile
 pyinstaller main.py --onefile
 pyinstaller main.py -F -w -i icon_name.ico
 ```
+
+## TODO! 실행파일 생성 (for Linux Ubuntu)
